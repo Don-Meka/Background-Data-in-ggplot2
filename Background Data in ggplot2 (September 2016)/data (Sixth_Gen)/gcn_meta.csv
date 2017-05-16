@@ -1,0 +1,20 @@
+variable ,description,type,values
+game,title of the game,character,
+publisher,company name that published the game,factor,
+publisher2,"recoded publisher variable. Publisher frequency <16 recoded as ""other""",factor,
+genre,genre of the game,factor,"action/adventure, collection, fighting, miscellaneous, music, party, platformer, puzzle, racing, role-playing, shooter, simulation, sports, strategy"
+genre2,"recoded genre variable. ""collection"", ""miscellaneous"", ""music"", ""party"", ""puzzle"", ""simulation"" recoded as ""other""",factor,"action/adventure, fighting, , platformer, puzzle, racing, role-playing, shooter, other , sports, strategy"
+year,year of game's release,date,2001-2007
+year2,recoded year variable to reflect lifespan of the gamecube. 2001 recoded as 2002. 2006 and 2007 recoded as 2005 ,date,2002-2005
+esrb,esrb rating,factor,"E, E10, T, M"
+esrb2,recoded esrb variable to due to uneven distribution of categories. E and E10 grouped together. T and M grouped together.,factor,"E/E10, T/M"
+local_player,maximum number of simultaneous players the game supports. (offline),integer,"1, 2, 3, 4"
+local_player2,recoded local_player variable with 3 player games grouped with 2 player games,integer,"1, 2, 4"
+online_player,maximum number of simultaneous players the game supports. (online),integer,NA (Nearly all Gamecube games had zero online support)
+metacritic,average review score on metacritic.com,integer,1-100
+exclusive,"whether or not the game exclusively released on the console. Ignores versions of the game released on PC, Dreamcast, and consoles of different generations.",factor,"Yes, No"
+sales_na,total sales in the north america region,decimal,"value is in ""millions of units sold"""
+sales_eu,total sales in the eruope region,decimal,"value is in ""millions of units sold"""
+sales_jp,total sales in the japan region,decimal,"value is in ""millions of units sold"""
+sales_o,total sales in the remaining regions,decimal,"value is in ""millions of units sold"""
+sales_total,total sales worldwide,decimal,"value is in ""millions of units sold"""
